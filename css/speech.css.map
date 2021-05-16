@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,MAAM;CACxB",
+    "sources": [
+        "speech.scss"
+    ],
+    "names": [],
+    "file": "speech.css"
+}

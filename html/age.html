@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.905.0.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/age.css">
+    <meta charset="UTF-8" />
+    <title>Rekognition</title>
+  </head>
+
+  <body>
+    <h1>Estimador de edad 🎂</h1>
+
+    <p>Amazon provee una API bastante poderosa llamada Amazon rekognition, que
+        permite mediante diversos end points obtener datos de imagenes mediante
+        sus modelos entrenados, para este primer ejemplo se tiene un estimador de edad 
+        que requiere una imagen con un solo rostro y devuelve un rango minimo y maximo 
+        de edad.
+    </p>
+
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input
+          name="fileToUpload"
+          id="fileToUpload"
+          accept="image/*"
+          type="file"
+        />
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" />
+      </div>
+    </div>
+    <div id="previewImage">
+        <small>Vista previa de imagen</small> <br>
+        <img id="preview" src="" /> 
+    </div>
+    <br>
+    <p id="opResult"></p>
+  </body>
+  <script src="../js/rekognition.js">
+    
+  </script>
+</html>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,eAAe,CAAA;EACX,OAAO,EAAC,IAAI;EACZ,qBAAqB,EAAE,OAAO;EAC9B,cAAc,EAAE,GAAG;EACnB,GAAG,EAAC,IAAI;EACR,OAAO,EAAC,IAAI;CAEf;;AAED,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,MAAM;CACxB",
+    "sources": [
+        "translate.scss"
+    ],
+    "names": [],
+    "file": "translate.css"
+}

@@ -1,0 +1,38 @@
+#emotionDiv {
+  display: grid;
+  height: 300px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  grid-template-areas:
+    "file gender"
+    "img emotion"
+    "img data";
+}
+
+#emotionLabel,#glassesLabel,#genderLabel{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#fileDiv {
+  grid-area: file;
+}
+
+#genderTag {
+  grid-area: gender;
+}
+#previewImage {
+  grid-area: img;
+}
+#emotionTag {
+  grid-area: emotion;
+}
+#dataTag {
+  grid-area: data;
+}
+
+#preview {
+  width: 300px;
+}

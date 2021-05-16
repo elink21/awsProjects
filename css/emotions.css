@@ -1,0 +1,52 @@
+#emotionDiv {
+  display: -ms-grid;
+  display: grid;
+  height: 300px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+      grid-template-areas: "file gender" "img emotion" "img data";
+}
+
+#emotionLabel, #glassesLabel, #genderLabel {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#fileDiv {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: file;
+}
+
+#genderTag {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: gender;
+}
+
+#previewImage {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+#emotionTag {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: emotion;
+}
+
+#dataTag {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: data;
+}
+
+#preview {
+  width: 300px;
+}
+/*# sourceMappingURL=emotions.css.map */
