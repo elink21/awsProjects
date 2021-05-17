@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,MAAM,CAAA;EACF,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,GAAG,EAAE,IAAI;CACZ",
+    "sources": [
+        "comprehend.scss"
+    ],
+    "names": [],
+    "file": "comprehend.css"
+}

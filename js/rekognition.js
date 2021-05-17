@@ -59,11 +59,12 @@ function detectEmotions(imageData) {
 //Loads selected image and unencodes image bytes for Rekognition DetectFaces API
 function ProcessImage() {
     AnonLog();
-    var control = document.getElementById("fileToUpload");
-    var file = control.files[0];
+    
     document.getElementById('preview').src = URL.createObjectURL(file);
 
     // Load base64 encoded image
+    var control = document.getElementById("fileToUpload");
+    var file = control.files[0];
     var reader = new FileReader();
     reader.onload = (function (theFile) {
         return function (e) {
