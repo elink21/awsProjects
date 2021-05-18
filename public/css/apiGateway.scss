@@ -1,0 +1,25 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+
+#endPointDiv {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  input {
+    margin-top: -10px;
+    margin-left: -20px;
+  }
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+#sendButton {
+  justify-self: center;
+}

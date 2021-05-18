@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.905.0.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/age.css" />
+    <meta charset="UTF-8" />
+    <title>Hosting</title>
+  </head>
+
+  <body>
+    <h1>Hosting con Firebase y AWS ⌨</h1>
+
+    <p>
+      El proyecto final de este conjunto es precisamente el hosting donde esta
+      alojado esta pagina.
+    </p>
+    <br />
+
+    <p>
+      Este proyecto esta alojado mediante un hosting de Firebase que es un
+      producto de Google, para esto se inicializo un proyecto en su consola y se
+      configuro mediante el CLI para subir la pagina a produccion.
+    </p>
+
+    <img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png?hl=es" width="300px" alt="">
+
+    <p>
+      Tambien se realizaron pruebas con el Hosting de sitios web estaticos de
+      S3, sin embargo debido a que AWS no provee de un certificado SSL para sus
+      sitios (necesario para el funcionamiento de algunas practicas de esta
+      pagina) se decidio utilizar finalmente un host de Google Firebase. El host
+      de AWS aun es accesible desde aqui: <br>
+      http://projecthostingb.s3-website-us-east-1.amazonaws.com/. <br /><small
+        >PD: Este host al no ser HTTPS no es completamente funcional, se recomienda permanecer en esta pagina.</small
+      >
+    </p>
+
+    <div class="homeLogo">
+      <a href="index.html">
+        <i class="material-icons"
+          ><span class="material-icons-outlined"> home </span></i
+        >
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,OAAO,EAAC,IAAI;EACZ,aAAa,EAAE,MAAM;CACxB",
+    "sources": [
+        "age.scss"
+    ],
+    "names": [],
+    "file": "age.css"
+}

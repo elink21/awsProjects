@@ -1,0 +1,63 @@
+body {
+  padding: 10px;
+}
+
+#student {
+  text-align: center;
+}
+
+#header {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+#header img {
+  width: 100px;
+  margin-top: -30px;
+}
+
+#projectsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+}
+
+#projectsContainer .project {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  background-color: #1a293f;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#projectsContainer .project img {
+  max-width: 100%;
+}
+
+#projectsContainer .project .number {
+  height: 30px;
+  border: 0.3px solid white;
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#projectsContainer .project .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#projectsContainer .project:hover {
+  background-color: #2e415c;
+}
+/*# sourceMappingURL=index.css.map */

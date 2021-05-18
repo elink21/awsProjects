@@ -1,0 +1,51 @@
+body{
+    padding:10px;
+}
+
+#student{
+    text-align: center;
+}
+
+#header{
+    display:grid;
+    justify-items: center;
+    img{
+        width: 90px;
+    }
+}
+
+#projectsContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    grid-auto-flow: row;
+
+    .project{
+        display:grid;
+        gap: 20px;
+        background-color:#1a293f;
+        transition: 1s ease-in;
+        grid-template-columns: 1fr 1fr;
+        img{
+            max-width: 100%;
+        }
+        .number{
+            height: 30px;
+            border: 0.3px solid white;
+            border-radius: 50%;
+            width: 30px !important;
+            height: 30px !important;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .title{
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+    .project:hover{
+        background-color:#2e415c ;
+    }
+}

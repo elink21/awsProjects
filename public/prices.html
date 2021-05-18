@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.905.0.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/prices.css" />
+    <meta charset="UTF-8" />
+    <title>AWS Pricing</title>
+  </head>
+
+  <body>
+    <h1>Amazon Pricing 🛒</h1>
+
+    <p>
+      Con todos los servicios presentes en el catalogo de AWS es 
+      facil perderse con las condiciones que establecen el precio
+      de los productos, sin embargo dentro de estos servicios existe 
+      uno que precisamente ayuda con este enredo.
+    </p> <br>
+
+    <p>Se trata de AWS Pricing, que brinda funciones para listar tanto
+      los servicios presentes en AWS como tambien su tipo de uso
+      y operacion, misma info que facilita el calcular presupuesto de consumo.
+    </p> <br>
+ 
+    <strong>Esta ejemplo funcional muestra un select para escoger el servicio,
+      y los datos se visualizaran en la parte derecha de acuerdo a compatibilidad.
+    </strong>
+
+    <div id="split">
+      <div>
+        <label for="serviceSelect"
+          >Seleccione el servicio para obtener la informacion</label
+        >
+        <div class="select">
+          <select
+            onchange="updateInfo(this.value);"
+            name="select"
+            id="serviceSelect"
+          ></select>
+        </div>
+      </div>
+
+      <div>
+        <h4>Datos del servicio de AWS</h4>
+        <div id="dataDiv">
+          <div>
+            <p class="emoji">💻</p>
+            <small>Tipo de uso: </small> <br>
+            <strong id="usageLabel"></strong>
+          </div>
+          <div>
+            <p class="emoji">📍</p>
+            <small>Localizacion: </small> <br>
+            <strong id="locationLabel"></strong>
+          </div>
+          <div>
+            <p class="emoji">🏢</p>
+            <small>Tipo de sede: </small> <br>
+            <strong id="locationTypeLabel"></strong>
+          </div>
+
+          <div>
+            <p class="emoji">📟</p>
+            <small>Operacion: </small> <br>
+            <strong id="operationLabel"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="homeLogo">
+      <a href="index.html">
+        <i class="material-icons"
+          ><span class="material-icons-outlined"> home </span></i
+        >
+      </a>
+    </div>
+  </body>
+
+  <script src="js/prices.js"></script>
+</html>

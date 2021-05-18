@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.905.0.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/dynamo.css" />
+    <meta charset="UTF-8" />
+    <title>DynamoDB</title>
+  </head>
+
+  <body>
+    <h1>Dynamo DB 🗃️</h1>
+
+    <p>
+      Dynamo DB es una base de datos no relacional proveida por AWS que permite
+      guardar datos persistentes sin la necesidad de un servidor con gestor de
+      base de datos propios.
+    </p>
+    <strong
+      >Aqui se demuestra su uso con una aplicacion que permite agregar tablas y
+      muestra las creadas anteriormente, la informacion es persistente sin
+      necesidad de una infraestructura backend para esta pagina.
+    </strong>
+    <br /><br /><br /><br />
+
+    <div id="split">
+      <div>
+        <h5>Crear nueva tabla</h5>
+        <input type="text" id="tableName" placeholder="Nombre de la tabla" />
+        <a
+          onclick="createTable()"
+          id="sendButton"
+          class="waves-effect waves-light btn"
+          ><i class="material-icons left"
+            ><span class="material-icons"> post_add </span></i
+          >Crear tabla</a
+        >
+      </div>
+      <div>
+        <h5>Tablas en Dynamo actualmente</h5>
+        <div id="tablesContainer">
+
+        </div>
+      </div>
+    </div>
+    <div class="homeLogo">
+      <a href="index.html">
+        <i class="material-icons"
+          ><span class="material-icons-outlined"> home </span></i
+        >
+      </a>
+    </div>
+  </body>
+  <script src="js/dynamo.js"></script>
+</html>

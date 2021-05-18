@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,OAAO,EAAC,IAAI;EACZ,qBAAqB,EAAE,OAAO;EAC9B,GAAG,EAAE,IAAI;CACZ",
+    "sources": [
+        "dynamo.scss"
+    ],
+    "names": [],
+    "file": "dynamo.css"
+}

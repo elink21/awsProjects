@@ -1,0 +1,10 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+#weatherLabel {
+  font-size: 80px;
+}
+/*# sourceMappingURL=forecast.css.map */
